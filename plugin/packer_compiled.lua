@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/Users/jorge.galindo/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "/Users/jorge.galindo/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/nvim-tree/nvim-tree.lua"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/Users/jorge.galindo/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
@@ -120,6 +125,11 @@ _G.packer_plugins = {
     needs_bufread = false,
     path = "/Users/jorge.galindo/.local/share/nvim/site/pack/packer/opt/nvim-treesitter-textobjects",
     url = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects"
+  },
+  ["onedark.nvim"] = {
+    loaded = true,
+    path = "/Users/jorge.galindo/.local/share/nvim/site/pack/packer/start/onedark.nvim",
+    url = "https://github.com/navarasu/onedark.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,

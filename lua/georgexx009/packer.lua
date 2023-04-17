@@ -41,4 +41,7 @@ return require('packer').startup(function(use)
 
   -- one dark theme
   use 'navarasu/onedark.nvim'
+
+  -- VScode like tree file explorer
+  use 'nvim-tree/nvim-tree.lua'
 end)

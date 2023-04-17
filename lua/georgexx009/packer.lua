@@ -18,11 +18,27 @@ return require('packer').startup(function(use)
         end,
       },
       {'williamboman/mason-lspconfig.nvim'}, -- Optional
-  
+
       -- Autocompletion
       {'hrsh7th/nvim-cmp'},     -- Required
       {'hrsh7th/cmp-nvim-lsp'}, -- Required
       {'L3MON4D3/LuaSnip'},     -- Required
     }
   }
+
+  -- treesitter
+  use { -- Highlight, edit, and navigate code
+  	  'nvim-treesitter/nvim-treesitter',
+  	  run = function()
+  		  pcall(require('nvim-treesitter.install').update { with_sync = true })
+  	  end,
+    }
+
+  use { -- Additional text objects via treesitter
+    'nvim-treesitter/nvim-treesitter-textobjects',
+    after = 'nvim-treesitter',
+  }
+
+  -- one dark theme
+  use 'navarasu/onedark.nvim'
 end)

@@ -39,6 +39,18 @@ return require('packer').startup(function(use)
     after = 'nvim-treesitter',
   }
 
+  -- telescope
+  use ({
+    'nvim-telescope/telescope-fzf-native.nvim',
+    run = "make"
+  })
+
+  use { -- Fuzzy finder
+    'nvim-telescope/telescope.nvim', tag = '0.1.1',
+    -- or                            , branch = '0.1.x',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
+
   -- one dark theme
   use 'navarasu/onedark.nvim'
 

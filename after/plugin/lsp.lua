@@ -6,7 +6,7 @@ lsp.preset('recommended')
 lsp.ensure_installed({
 	'tsserver',
 	'eslint',
-	-- 'sumneko_lua'
+--	'sumneko_lua'
 })
 
 local cmp = require('cmp')
@@ -23,9 +23,9 @@ lsp.setup_nvim_cmp({
 	mapping = cmp_mappings
 })
  -- (Optional) Configure lua language server for neovim
- --lsp.nvim_workspace()
- lsp.on_attach(function(client, bufnr)
- 	local opts = { buffer = bufnr, remap = false }
+lsp.nvim_workspace()
+lsp.on_attach(function(client, bufnr)
+local opts = { buffer = bufnr, remap = false }
 
 vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
  	vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)

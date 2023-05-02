@@ -61,4 +61,8 @@ return require('packer').startup(function(use)
 
   -- VScode like tree file explorer
   use 'nvim-tree/nvim-tree.lua'
+
+  -- auto complete
+  use 'windwp/nvim-autopairs'
+  use 'windwp/nvim-ts-autotag'
 end)

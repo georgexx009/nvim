@@ -32,3 +32,9 @@ keymap.set("v", "x", "\"_x")
 
 -- highlight
 keymap.set("n", "<leader>cs", ":noh<CR>")
+
+-- fold
+keymap.set("n", "<leader>zf", "zfa{") -- fold {}
+keymap.set("n", "<leader>zt", "za") -- toggle fold
+keymap.set("n", "<leader>zca", "zM") -- close all folds
+keymap.set("n", "<leader>zoa", "zR") -- open all folds

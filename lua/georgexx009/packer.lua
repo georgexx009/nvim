@@ -65,4 +65,15 @@ return require('packer').startup(function(use)
   -- auto complete
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
+
+  -- file icons
+  use 'nvim-tree/nvim-web-devicons'
+  
+  -- comment line of code
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+  }
 end)

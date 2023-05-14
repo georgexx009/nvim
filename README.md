@@ -8,3 +8,9 @@ Install fzf for manage web bookmarks https://github.com/junegunn/fzf#installatio
 
 Install yabai
 `brew install koekeishiya/formulae/yabai`
+
+## Commands examples
+
+- <Tab>
+- <cmd> - refers to : vim command
+- <S-Tab>

@@ -83,4 +83,7 @@ return require('packer').startup(function(use)
     config = function() require('tailwind-sorter').setup() end,
     run = 'cd formatter && npm i && npm run build',
   }
+  
+  -- Buffer line
+  use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
 end)

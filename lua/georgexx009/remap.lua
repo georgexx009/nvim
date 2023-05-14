@@ -5,6 +5,8 @@ local keymap = vim.keymap -- for conciseness
 
 -- main keymaps
 keymap.set("n", "<leader>x", ":q<CR>")
+keymap.set("i", "jj", "<ESC>")
+keymap.set("n", "<leader>c", "\"+y$")
 
 -- split windows
 keymap.set("n", "<leader>sv", "<C-w>v") -- split vertically

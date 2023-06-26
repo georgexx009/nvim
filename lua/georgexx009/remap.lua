@@ -5,7 +5,7 @@ local keymap = vim.keymap -- for conciseness
 
 -- main keymaps
 keymap.set("n", "<leader>x", ":q<CR>")
-keymap.set("i", "jj", "<ESC>")
+keymap.set("i", "jj", "<ESC>:w<CR>")
 keymap.set("n", "<leader>c", "\"+y$")
 
 -- split windows
@@ -40,3 +40,11 @@ keymap.set("n", "<leader>zf", "zfa{") -- fold {}
 keymap.set("n", "<leader>zt", "za") -- toggle fold
 keymap.set("n", "<leader>zca", "zM") -- close all folds
 keymap.set("n", "<leader>zoa", "zR") -- open all folds
+
+-- Move highlighted lines
+keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
+-- move previous and forward places for pointers
+keymap.set("n", "<C-m>", "<C-o>") -- Jump to previous in jump list
+keymap.set("n", "<C-n>", "<C-i>") -- Jump to next in jump list

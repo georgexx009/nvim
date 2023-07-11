@@ -105,5 +105,10 @@ return require('packer').startup(function(use)
     run = function() vim.fn["mkdp#util#install"]() end,
   })
 
-  use 'f-person/git-blame.nvim'
+  use {
+    "f-person/git-blame.nvim",
+    config = function()
+      vim.g.gitblame_enabled = 0
+    end,
+  }
 end)

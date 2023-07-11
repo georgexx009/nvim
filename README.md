@@ -9,6 +9,11 @@ Install fzf for manage web bookmarks https://github.com/junegunn/fzf#installatio
 Install yabai
 `brew install koekeishiya/formulae/yabai`
 
+```bash
+:GitBlameEnable
+:GitBlameDisable
+```
+
 ## Commands examples
 
 - <Tab>

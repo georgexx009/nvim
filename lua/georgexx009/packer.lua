@@ -111,4 +111,6 @@ return require('packer').startup(function(use)
       vim.g.gitblame_enabled = 0
     end,
   }
+
+  use 'github/copilot.vim'
 end)

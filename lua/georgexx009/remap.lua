@@ -48,3 +48,27 @@ keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 -- move previous and forward places for pointers
 keymap.set("n", "<C-m>", "<C-o>") -- Jump to previous in jump list
 keymap.set("n", "<C-n>", "<C-i>") -- Jump to next in jump list
+
+-- move to root vars and functions
+keymap.set("n", "<leader>rs", "/^<Bslash>(const<Bslash>|let<Bslash>|function<Bslash>|module<Bslash>)<CR>") -- search root
+
+keymap.set("n", "<leader>ge", "iif err != nil {\nreturn err\n}\n")
+
+-- copilot
+vim.g.copilot_no_tab_map = true
+vim.g.copilot_enabled = false
+vim.api.nvim_set_keymap("i", "<C-a>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
+keymap.set("i", "<C-n>", "<Plug>(copilot-next)")
+keymap.set("i", "<C-p>", "<Plug>(copilot-prev)")
+keymap.set("i", "<C-s>", "<Plug>(copilot-suggest)")
+
+
+-- navigate like a graph
+-- keymap.set("n", "<leader>gsr", "O// root<ESC>:w<CR>") -- graph start root
+-- keymap.set("n", "<leader>gsb", "<leader>gdO// branch<ESC>:w<CR><leader>cs") -- graph start branch
+-- keymap.set("n", "<leader>gxn", "<leader>gf")
+
+-- Mark like xcode
+keymap.set("n", "<leader>sm", "/MARK<CR>") -- search Mark
+
+

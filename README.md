@@ -9,6 +9,9 @@ Install fzf for manage web bookmarks https://github.com/junegunn/fzf#installatio
 Install yabai
 `brew install koekeishiya/formulae/yabai`
 
+Install httpie
+`brew install httpie`
+
 ```bash
 :GitBlameEnable
 :GitBlameDisable
@@ -19,3 +22,6 @@ Install yabai
 - <Tab>
 - <cmd> - refers to : vim command
 - <S-Tab>
+- <CR> - enter
+- <ESC>
+- <Blash>
